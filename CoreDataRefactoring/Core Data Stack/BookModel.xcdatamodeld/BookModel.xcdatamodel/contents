@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18C54" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="2">
+    <entity name="Book" representedClassName=".Book" syncable="YES">
+        <attribute name="authors" attributeType="String" syncable="YES"/>
+        <attribute name="coverURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="edition" attributeType="String" syncable="YES"/>
+        <attribute name="lastOpened" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="title" attributeType="String" syncable="YES"/>
+        <attribute name="version" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="chapters" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Chapter" inverseName="book" inverseEntity="Chapter" syncable="YES"/>
+        <relationship name="tables" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Table" inverseName="book" inverseEntity="Table" syncable="YES"/>
+    </entity>
+    <entity name="Chapter" representedClassName=".Chapter" syncable="YES">
+        <attribute name="number" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sequence" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="book" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="chapters" inverseEntity="Book" syncable="YES"/>
+        <relationship name="equations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Equation" inverseName="chapter" inverseEntity="Equation" syncable="YES"/>
+    </entity>
+    <entity name="Equation" representedClassName=".Equation" syncable="YES">
+        <attribute name="latex" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="number" attributeType="String" syncable="YES"/>
+        <attribute name="sequence" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="chapter" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Chapter" inverseName="equations" inverseEntity="Chapter" syncable="YES"/>
+    </entity>
+    <entity name="Material" representedClassName=".Material" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rawData" attributeType="String" syncable="YES"/>
+        <attribute name="sequence" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="table" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Table" inverseName="materials" inverseEntity="Table" syncable="YES"/>
+    </entity>
+    <entity name="Property" representedClassName=".Property" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="sequence" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="units" attributeType="String" syncable="YES"/>
+        <relationship name="table" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Table" inverseName="properties" inverseEntity="Table" syncable="YES"/>
+    </entity>
+    <entity name="Table" representedClassName=".Table" syncable="YES">
+        <attribute name="isPlain" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="number" attributeType="String" syncable="YES"/>
+        <attribute name="sequence" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="title" attributeType="String" syncable="YES"/>
+        <relationship name="book" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="tables" inverseEntity="Book" syncable="YES"/>
+        <relationship name="materials" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Material" inverseName="table" inverseEntity="Material" syncable="YES"/>
+        <relationship name="properties" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Property" inverseName="table" inverseEntity="Property" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Book" positionX="262.8984375" positionY="88.31640625" width="128" height="165"/>
+        <element name="Chapter" positionX="447.65234375" positionY="72.5234375" width="128" height="118"/>
+        <element name="Equation" positionX="649.27734375" positionY="24.55078125" width="128" height="118"/>
+        <element name="Material" positionX="650.8125" positionY="272.0703125" width="128" height="118"/>
+        <element name="Property" positionX="650.84765625" positionY="154.15625" width="128" height="103"/>
+        <element name="Table" positionX="447.9140625" positionY="229.9296875" width="128" height="163"/>
+    </elements>
+</model>

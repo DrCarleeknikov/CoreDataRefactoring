@@ -12,7 +12,32 @@
 		6E0220A52232E88100F0723F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E0220A32232E88100F0723F /* Main.storyboard */; };
 		6E0220A72232E88200F0723F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E0220A62232E88200F0723F /* Assets.xcassets */; };
 		6E0220AA2232E88200F0723F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E0220A82232E88200F0723F /* LaunchScreen.storyboard */; };
+		6E0220C72232E90200F0723F /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0220C12232E90200F0723F /* Property.swift */; };
+		6E0220C82232E90200F0723F /* Equation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0220C22232E90200F0723F /* Equation.swift */; };
+		6E0220C92232E90200F0723F /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0220C32232E90200F0723F /* Table.swift */; };
+		6E0220CA2232E90200F0723F /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0220C42232E90200F0723F /* Book.swift */; };
+		6E0220CB2232E90200F0723F /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0220C52232E90200F0723F /* Material.swift */; };
+		6E0220CC2232E90200F0723F /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0220C62232E90200F0723F /* Chapter.swift */; };
+		6E0220D72232E92600F0723F /* NSManagedObjectContextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0220CF2232E92500F0723F /* NSManagedObjectContextExtension.swift */; };
+		6E0220D92232E92600F0723F /* Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0220D12232E92500F0723F /* Managed.swift */; };
+		6E0220DA2232E92600F0723F /* Restorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0220D22232E92500F0723F /* Restorable.swift */; };
+		6E0220DB2232E92600F0723F /* ManagedDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0220D32232E92500F0723F /* ManagedDecodable.swift */; };
+		6E0220DD2232E92600F0723F /* CoreDataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0220D52232E92600F0723F /* CoreDataContainer.swift */; };
+		6E0220EB2232EBBA00F0723F /* BookModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6E0220E92232EBBA00F0723F /* BookModel.xcdatamodeld */; };
+		6E0220EE2232ED1600F0723F /* CoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0220EC2232ED1600F0723F /* CoreDataTests.swift */; };
+		6E0220EF2232ED1600F0723F /* ImportBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0220ED2232ED1600F0723F /* ImportBookTests.swift */; };
+		6E0220F12232EEDC00F0723F /* Example Book.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6E0220F02232ED5D00F0723F /* Example Book.plist */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E0220BB2232E8C800F0723F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E0220942232E88100F0723F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E02209B2232E88100F0723F;
+			remoteInfo = CoreDataRefactoring;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6E02209C2232E88100F0723F /* CoreDataRefactoring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataRefactoring.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +47,34 @@
 		6E0220A62232E88200F0723F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E0220A92232E88200F0723F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E0220AB2232E88200F0723F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E0220B62232E8C700F0723F /* CoreDataRefactoringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataRefactoringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E0220BA2232E8C800F0723F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E0220C12232E90200F0723F /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		6E0220C22232E90200F0723F /* Equation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Equation.swift; sourceTree = "<group>"; };
+		6E0220C32232E90200F0723F /* Table.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+		6E0220C42232E90200F0723F /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		6E0220C52232E90200F0723F /* Material.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
+		6E0220C62232E90200F0723F /* Chapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
+		6E0220CF2232E92500F0723F /* NSManagedObjectContextExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSManagedObjectContextExtension.swift; sourceTree = "<group>"; };
+		6E0220D12232E92500F0723F /* Managed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Managed.swift; sourceTree = "<group>"; };
+		6E0220D22232E92500F0723F /* Restorable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restorable.swift; sourceTree = "<group>"; };
+		6E0220D32232E92500F0723F /* ManagedDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedDecodable.swift; sourceTree = "<group>"; };
+		6E0220D52232E92600F0723F /* CoreDataContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataContainer.swift; sourceTree = "<group>"; };
+		6E0220EA2232EBBA00F0723F /* BookModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookModel.xcdatamodel; sourceTree = "<group>"; };
+		6E0220EC2232ED1600F0723F /* CoreDataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTests.swift; sourceTree = "<group>"; };
+		6E0220ED2232ED1600F0723F /* ImportBookTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportBookTests.swift; sourceTree = "<group>"; };
+		6E0220F02232ED5D00F0723F /* Example Book.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Example Book.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6E0220992232E88100F0723F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E0220B32232E8C700F0723F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				6E02209E2232E88100F0723F /* CoreDataRefactoring */,
+				6E0220B72232E8C800F0723F /* CoreDataRefactoringTests */,
 				6E02209D2232E88100F0723F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				6E02209C2232E88100F0723F /* CoreDataRefactoring.app */,
+				6E0220B62232E8C700F0723F /* CoreDataRefactoringTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,12 +107,59 @@
 			children = (
 				6E02209F2232E88100F0723F /* AppDelegate.swift */,
 				6E0220A12232E88100F0723F /* ViewController.swift */,
-				6E0220A32232E88100F0723F /* Main.storyboard */,
+				6E0220F02232ED5D00F0723F /* Example Book.plist */,
+				6E0220B12232E8A600F0723F /* Core Data Stack */,
 				6E0220A62232E88200F0723F /* Assets.xcassets */,
+				6E0220A32232E88100F0723F /* Main.storyboard */,
 				6E0220A82232E88200F0723F /* LaunchScreen.storyboard */,
 				6E0220AB2232E88200F0723F /* Info.plist */,
 			);
 			path = CoreDataRefactoring;
+			sourceTree = "<group>";
+		};
+		6E0220B12232E8A600F0723F /* Core Data Stack */ = {
+			isa = PBXGroup;
+			children = (
+				6E0220E92232EBBA00F0723F /* BookModel.xcdatamodeld */,
+				6E0220CD2232E91100F0723F /* Utilities */,
+				6E0220C02232E90200F0723F /* Book Classes */,
+			);
+			path = "Core Data Stack";
+			sourceTree = "<group>";
+		};
+		6E0220B72232E8C800F0723F /* CoreDataRefactoringTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E0220EC2232ED1600F0723F /* CoreDataTests.swift */,
+				6E0220ED2232ED1600F0723F /* ImportBookTests.swift */,
+				6E0220BA2232E8C800F0723F /* Info.plist */,
+			);
+			path = CoreDataRefactoringTests;
+			sourceTree = "<group>";
+		};
+		6E0220C02232E90200F0723F /* Book Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6E0220C12232E90200F0723F /* Property.swift */,
+				6E0220C22232E90200F0723F /* Equation.swift */,
+				6E0220C32232E90200F0723F /* Table.swift */,
+				6E0220C42232E90200F0723F /* Book.swift */,
+				6E0220C52232E90200F0723F /* Material.swift */,
+				6E0220C62232E90200F0723F /* Chapter.swift */,
+			);
+			path = "Book Classes";
+			sourceTree = "<group>";
+		};
+		6E0220CD2232E91100F0723F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6E0220D52232E92600F0723F /* CoreDataContainer.swift */,
+				6E0220D12232E92500F0723F /* Managed.swift */,
+				6E0220D32232E92500F0723F /* ManagedDecodable.swift */,
+				6E0220CF2232E92500F0723F /* NSManagedObjectContextExtension.swift */,
+				6E0220D22232E92500F0723F /* Restorable.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +182,24 @@
 			productReference = 6E02209C2232E88100F0723F /* CoreDataRefactoring.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6E0220B52232E8C700F0723F /* CoreDataRefactoringTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E0220BD2232E8C800F0723F /* Build configuration list for PBXNativeTarget "CoreDataRefactoringTests" */;
+			buildPhases = (
+				6E0220B22232E8C700F0723F /* Sources */,
+				6E0220B32232E8C700F0723F /* Frameworks */,
+				6E0220B42232E8C700F0723F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E0220BC2232E8C800F0723F /* PBXTargetDependency */,
+			);
+			name = CoreDataRefactoringTests;
+			productName = CoreDataRefactoringTests;
+			productReference = 6E0220B62232E8C700F0723F /* CoreDataRefactoringTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +212,10 @@
 				TargetAttributes = {
 					6E02209B2232E88100F0723F = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					6E0220B52232E8C700F0723F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6E02209B2232E88100F0723F;
 					};
 				};
 			};
@@ -113,6 +233,7 @@
 			projectRoot = "";
 			targets = (
 				6E02209B2232E88100F0723F /* CoreDataRefactoring */,
+				6E0220B52232E8C700F0723F /* CoreDataRefactoringTests */,
 			);
 		};
 /* End PBXProject section */
@@ -125,6 +246,14 @@
 				6E0220AA2232E88200F0723F /* LaunchScreen.storyboard in Resources */,
 				6E0220A72232E88200F0723F /* Assets.xcassets in Resources */,
 				6E0220A52232E88100F0723F /* Main.storyboard in Resources */,
+				6E0220F12232EEDC00F0723F /* Example Book.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E0220B42232E8C700F0723F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,12 +264,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E0220D92232E92600F0723F /* Managed.swift in Sources */,
+				6E0220CB2232E90200F0723F /* Material.swift in Sources */,
+				6E0220C72232E90200F0723F /* Property.swift in Sources */,
+				6E0220C92232E90200F0723F /* Table.swift in Sources */,
+				6E0220CA2232E90200F0723F /* Book.swift in Sources */,
+				6E0220DA2232E92600F0723F /* Restorable.swift in Sources */,
+				6E0220D72232E92600F0723F /* NSManagedObjectContextExtension.swift in Sources */,
+				6E0220DD2232E92600F0723F /* CoreDataContainer.swift in Sources */,
 				6E0220A22232E88100F0723F /* ViewController.swift in Sources */,
 				6E0220A02232E88100F0723F /* AppDelegate.swift in Sources */,
+				6E0220EB2232EBBA00F0723F /* BookModel.xcdatamodeld in Sources */,
+				6E0220C82232E90200F0723F /* Equation.swift in Sources */,
+				6E0220CC2232E90200F0723F /* Chapter.swift in Sources */,
+				6E0220DB2232E92600F0723F /* ManagedDecodable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E0220B22232E8C700F0723F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E0220EE2232ED1600F0723F /* CoreDataTests.swift in Sources */,
+				6E0220EF2232ED1600F0723F /* ImportBookTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E0220BC2232E8C800F0723F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E02209B2232E88100F0723F /* CoreDataRefactoring */;
+			targetProxy = 6E0220BB2232E8C800F0723F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6E0220A32232E88100F0723F /* Main.storyboard */ = {
@@ -312,6 +470,44 @@
 			};
 			name = Release;
 		};
+		6E0220BE2232E8C800F0723F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoreDataRefactoringTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stemfox.CoreDataRefactoringTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreDataRefactoring.app/CoreDataRefactoring";
+			};
+			name = Debug;
+		};
+		6E0220BF2232E8C800F0723F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoreDataRefactoringTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stemfox.CoreDataRefactoringTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreDataRefactoring.app/CoreDataRefactoring";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -333,7 +529,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		6E0220BD2232E8C800F0723F /* Build configuration list for PBXNativeTarget "CoreDataRefactoringTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E0220BE2232E8C800F0723F /* Debug */,
+				6E0220BF2232E8C800F0723F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6E0220E92232EBBA00F0723F /* BookModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6E0220EA2232EBBA00F0723F /* BookModel.xcdatamodel */,
+			);
+			currentVersion = 6E0220EA2232EBBA00F0723F /* BookModel.xcdatamodel */;
+			path = BookModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6E0220942232E88100F0723F /* Project object */;
 }
